@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7ad6bc31.chunk.css",
+    "main.js": "/static/js/main.ab4ae73a.chunk.js",
+    "main.js.map": "/static/js/main.ab4ae73a.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.b4f6e7ac.chunk.js": "/static/js/2.b4f6e7ac.chunk.js",
+    "static/js/2.b4f6e7ac.chunk.js.map": "/static/js/2.b4f6e7ac.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.712814785247c2e36499f01defbb06a5.js": "/precache-manifest.712814785247c2e36499f01defbb06a5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.7ad6bc31.chunk.css.map": "/static/css/main.7ad6bc31.chunk.css.map",
+    "static/media/angel.jpg": "/static/media/angel.ca55a1ff.jpg",
+    "static/media/coaching.jpg": "/static/media/coaching.fe258ce9.jpg",
+    "static/media/headerFont.jpg": "/static/media/headerFont.3f48ae98.jpg",
+    "static/media/workingProgress.jpg": "/static/media/workingProgress.6b49cce7.jpg"
+  }
+}
