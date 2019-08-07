@@ -3,6 +3,7 @@ import React from 'react';
 import angelPortrait from '../assets/angel.jpg';
 import workingProgress from '../assets/workingProgress.jpg';
 import coaching from '../assets/coaching.jpg';
+import coachingDiagram from '../assets/coachingdiagram.png'
 
 import ElemAccueilR from './ElementAccueilR';
 import ElemAccueilL from './ElementAccueilL';
@@ -56,12 +57,13 @@ class Accueil extends React.Component {
             <React.Fragment>
 
                 <div className="row align-items-center en-tete">
-                    <div className='col-8 accroche'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices ipsum odio. Nam sit amet erat elementum, efficitur urna et."</div>
+                    <div className='col-8 accroche text-center'>« LE BONHEUR, C’EST DE REGARDER LA VIE AUTREMENT !!!"</div>
                     <img className='col-4 img-fluid' style={styleCSS} alt='portrait' src={angelPortrait}></img>
                 </div>
-
                 {liste}
-
+                <div className='row align-items-center en-tete'>
+                    <img className='img-fluid' src={coachingDiagram} alt='shema coaching'></img>
+                </div>
             </React.Fragment>
         )
     }

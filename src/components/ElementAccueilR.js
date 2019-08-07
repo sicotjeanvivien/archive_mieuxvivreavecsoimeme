@@ -10,8 +10,8 @@ class ElemAccueilR extends React.Component {
         return (
             <div className='row elementPage'>
 
-                <img className='col-6 img-fluid' alt='portrait' style={styleCSS} src={this.props.img}></img>
-                <div className='col-6 '>
+                <img className='col-6 p-0 img-fluid' alt='portrait' style={styleCSS} src={this.props.img}></img>
+                <div className='col-6 p-5'>
                     <h5>{this.props.titre}</h5>
                     <p>{this.props.content}</p>
                 </div>

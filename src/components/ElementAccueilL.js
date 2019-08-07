@@ -10,11 +10,11 @@ class ElemAccueilL extends React.Component {
         return (
             <div className='row elementPage'>
 
-                <div className='col-6 '>
-                    <h5>{this.props.titre}</h5>
+                <div className='col-6 p-5'>
+                    <h5 className=''>{this.props.titre}</h5>
                     <p>{this.props.content}</p>
                 </div>
-                <img className='col-6 img-fluid' alt='portrait' style={styleCSS} src={this.props.img}></img>
+                <img className='col-6 p-0 img-fluid' alt='portrait' style={styleCSS} src={this.props.img}></img>
 
             </div>
         )
