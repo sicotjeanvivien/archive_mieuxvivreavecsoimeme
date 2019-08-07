@@ -14,7 +14,7 @@ class Footer extends React.Component {
                             <h6 className='col-12'>Contact</h6>
                             <ul className="col-12 text-left">
                                 <li className="">Tel: 06.62.97.21.29</li>
-                                <li className="">Email: exemple@email.com</li>
+                                <li className="">Email: angel.coachaquitaine@gmail.com</li>
                             </ul>
                         </div>
                     </div>
