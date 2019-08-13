@@ -63,8 +63,8 @@ class Contact extends React.Component {
                                     onChange={e => this.setState({ message: e.target.value })}
                                 ></textarea>
                             </div>
+                            <div className="g-recaptcha" data-sitekey="6LdF47IUAAAAACcnds0S--wDXsjhaJ_jUjUNkVvD"></div>
                             <div>
-                                <label></label>
                                 <button type="button" value="Envoyer" onClick={e => this.handleFormSubmit(e)}>Envoyer</button>
                             </div>
                         </form>
