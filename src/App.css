@@ -461,13 +461,6 @@ body{
 	border-radius: 15px;
 }
 
-.contact-form {
-	width: 100%;
-	padding: 5%;
-	height: auto;
-	border-right: var(--second-bg-color) 5px solid;
-}
-
 .contact-label {
 	font-size: 0.8em;
 }
@@ -486,4 +479,58 @@ body{
 .nav-link{
   font-size: 1.2em;
   color: black;
+}
+
+/***
+* Version Mobile 
+***/
+
+@media screen and (max-width: 640px) {
+  .mobile{
+    display: block;
+    position: fixed;
+    z-index: 10;
+
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 5%;
+    height: auto;
+  }
+
+  .web{
+    display: none;
+  }
+
+}
+
+/***
+* Version Destock
+***/
+
+@media screen and (min-width:650px){
+  .mobile{
+    display: none;
+  }
+
+  .web{
+    display: block;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 5%;
+    height: auto;
+    border-right: var(--second-bg-color) 5px solid;
+  }
+
+}
+
+.active{
+  display: block;
+}
+
+.inactive{
+  display: none;
 }

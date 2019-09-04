@@ -37,7 +37,7 @@ class Contact extends React.Component {
         return (
             <div className='container main-bloc'>
                 <div className='row contact'>
-                    <div className='col-6'>
+                    <div className='col-md-6 col-sm-12'>
                         <div className='contact-titre'>Envoyer un message</div>
                         <form className='contact-form'>
                             <div className="form-group">
@@ -63,18 +63,17 @@ class Contact extends React.Component {
                                     onChange={e => this.setState({ message: e.target.value })}
                                 ></textarea>
                             </div>
-                            <div className="g-recaptcha" data-sitekey="6LdF47IUAAAAACcnds0S--wDXsjhaJ_jUjUNkVvD"></div>
                             <div>
                                 <button type="button" value="Envoyer" onClick={e => this.handleFormSubmit(e)}>Envoyer</button>
                             </div>
                         </form>
                         <div>
                             {this.state.mailSent &&
-                                <div>Merci de votre message</div> 
+                                <div>Merci de votre message</div>
                             }
                         </div>
                     </div>
-                    <div className='col-6'>
+                    <div className='col-md-6 d-md-block d-none'>
                         <div className='contact-titre mb-5'>Information</div>
                         <p><strong>Téléphone: </strong> 06.62.97.21.29</p>
                         <p><strong>Email: </strong> angel.coachaquitaine@gmail.com</p>
