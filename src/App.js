@@ -18,22 +18,10 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Presentation from './components/Presentation';
 import Blog from './components/Blog';
-
-//firebase 
-// import base from './base';
+import Admin from './components/Admin';
 
 class App extends React.Component {
 
-  state = {
-    message: 'patate'
-  }
-
-  // componentDidMount () {
-  //   base.syncState('/message', {
-  //     context: this,
-  //     state: 'message'
-  //   })
-  // }
 
   render() {
 
@@ -103,9 +91,9 @@ class App extends React.Component {
                 <li className="nav-item">
                   <Link to='/presentation' className="nav-link">Qui suis-je?</Link>
                 </li>
-                {/* <li className="nav-item">
+                <li className="nav-item">
                   <Link to='/blog/liste' className="nav-link">Blog</Link>
-                </li> */}
+                </li>
                 <li className="nav-item">
                   <Link to='/contact' className="nav-link">Contact</Link>
                 </li>
@@ -117,6 +105,7 @@ class App extends React.Component {
             <Route path='/presentation' component={Presentation} />
             <Route path='/blog/liste' component={Blog} />
             <Route path='/contact' component={Contact} />
+            <Route path='/admin' component={Admin} />
 
           </div>
         </Router>
