@@ -1,16 +1,21 @@
 import React from 'react';
 
 //firebase
-import base from '../base';
+import base, { firebaseApp } from '../base';
+import firebase from 'firebase/app';
+import 'firebase/auth';
 
 //Components
 import AjouterArticle from './AjouterArticle';
 import MajArticle from './MajArticle';
+import Login from './Login';
 
 class Admin extends React.Component {
 
     state = {
         articles: {},
+        uid: null,
+        localId: null,
     };
 
     componentDidMount() {
@@ -19,6 +24,19 @@ class Admin extends React.Component {
             state: 'articles'
         })
     };
+
+    handleAuth = async authData => {
+        console.log(authData)
+        // const box = await base.fetch(this.props.)
+    }
+
+    authenticate = () => {
+        const authProvider = new firebase.auth.FacebookAuthProvider()
+        firebaseApp
+            .auth()
+            .signInWithPopup(authProvider)
+            .then(this.handleAuth)
+    }
 
     ajouterArticle = article => {
         const articles = { ...this.state.articles }
@@ -35,10 +53,17 @@ class Admin extends React.Component {
     deleteArticle = (key) => {
         const articles = { ...this.state.artcicles }
         articles[key] = null
-        this.setState({articles})
+        this.setState({ articles })
     }
 
     render() {
+
+        if (!this.state.uid) {
+            return <Login
+                authenticate={this.authenticate}
+            ></Login>
+        }
+
         return (
             <div>
                 <h3>Administration Blog</h3>
