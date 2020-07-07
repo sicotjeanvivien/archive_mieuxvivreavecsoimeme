@@ -75,8 +75,10 @@ class Contact extends React.Component {
                     </div>
                     <div className='col-md-6 d-md-block d-none'>
                         <div className='contact-titre mb-5'>Information</div>
-                        <p><strong>Téléphone: </strong> 06.62.97.21.29</p>
+                        {/* <p><strong>Téléphone: </strong> 06.62.97.21.29</p> */}
                         <p><strong>Email: </strong> angel.coachaquitaine@gmail.com</p>
+                        <p><strong>Skype: </strong> angel.coachaquitaine@gmail.com</p>
+                        <p><strong>WhatsApp: </strong> </p>
                     </div>
                 </div>
             </div >

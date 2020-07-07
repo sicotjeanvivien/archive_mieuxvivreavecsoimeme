@@ -35,12 +35,12 @@ class Footer extends React.Component {
                                 <h6 className='col-12'>Suivre notre actualité</h6>
 
                                 <div className="col-3">
-                                    <a href='#'>
+                                    <a href='https://www.instagram.com/angel.coachs/?hl=fr'>
                                         <FontAwesomeIcon icon={faInstagram} size='2x' />
                                     </a>
                                 </div>
                                 <div className="col-3">
-                                    <a href='#'>
+                                    <a href='https://www.facebook.com/NouvelVie-Nouvel-ELAN-115166936880342/'>
                                         <FontAwesomeIcon icon={faFacebook} size='2x' />
                                     </a>
                                 </div>

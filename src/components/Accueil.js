@@ -1,9 +1,15 @@
 import React from 'react';
+import { Carousel } from 'react-bootstrap'
+
 
 import angelPortrait from '../assets/angel.jpg';
 import workingProgress from '../assets/workingProgress.jpg';
 import coaching from '../assets/coaching.jpg';
-import coachingDiagram from '../assets/coachingdiagram.png'
+import coachingDiagram from '../assets/coachingdiagram.png';
+import img01 from './../assets/img_carousel_01.jpg';
+import img02 from './../assets/img_carousel_02.jpg';
+import img03 from './../assets/img_carousel_03.jpg';
+import testimonials from '../assets/testimonials.json';
 
 import ElemAccueilR from './ElementAccueilR';
 import ElemAccueilL from './ElementAccueilL';
@@ -55,12 +61,42 @@ class Accueil extends React.Component {
 
         return (
             <React.Fragment>
-
+                <Carousel className='mt-5' >
+                    <Carousel.Item>
+                        <img className="img-fluid" src={img01} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="img-fluid" src={img02} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="img-fluid" src={img03} />
+                    </Carousel.Item>
+                </Carousel>
                 <div className="row align-items-center en-tete">
-                    <div className='col-8 accroche text-center'>« LE BONHEUR, C’EST DE REGARDER LA VIE AUTREMENT !!!"</div>
+                    <div className='col-8 accroche text-center'>"UNE JOURNEE PUISSANTE & INSPIRANTE basée sur des résultats immédiats"</div>
                     <img className='col-4 img-fluid' style={styleCSS} alt='portrait' src={angelPortrait}></img>
                 </div>
-                {liste}
+                {/* <div> VIDEO</div> */}
+                <div className="row align-items-center en-tete">
+                    <img className='col-4 img-fluid' style={styleCSS} alt='portrait' src={coaching}></img>
+                    <div className='col-8 accroche text-center'>"Il est temps de vivre la vie que tu t'es imaginée." - Henry James</div>
+                </div>
+                <Carousel indicators={false} className='mt-5' >
+                    {
+                        testimonials.map((elem, i) => {
+                            console.log(elem);
+                            return (
+                                <Carousel.Item key={i}>
+                                    <div className="row justify-content-center">
+                                        <h3 className="col-8 text-right"> « {elem.title.toUpperCase()} »</h3>
+                                        <p className="col-6 text-left"> <b>{elem.author}</b></p>
+                                    </div>
+                                </Carousel.Item>
+                            )
+                        })
+                    }
+                </Carousel>
+                <div id="player"></div>
                 <div className='row align-items-center en-tete'>
                     <img className='img-fluid' src={coachingDiagram} alt='shema coaching'></img>
                 </div>
