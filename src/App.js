@@ -19,6 +19,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Presentation from './components/Presentation';
 import Blog from './components/Blog';
+import { Testimonials } from './components/Testimonials';
 
 //firebase 
 // import base from './base';
@@ -106,6 +107,9 @@ class App extends React.Component {
                                 <li className="nav-item">
                                     <Link to='/presentation' className="nav-link">Mon parcours</Link>
                                 </li>
+                                <li className="nav-item">
+                                    <Link to='/testimonials' className="nav-link">Témoignage</Link>
+                                </li>
                                 {/* <li className="nav-item">
                   <Link to='/blog/liste' className="nav-link">Blog</Link>
                 </li> */}
@@ -119,6 +123,7 @@ class App extends React.Component {
 
                         <Route exact path='/' component={Accueil} />
                         <Route path='/presentation' component={Presentation} />
+                        <Route path='/testimonials' component={Testimonials} />
                         <Route path='/blog/liste' component={Blog} />
                         <Route path='/contact' component={Contact} />
 
